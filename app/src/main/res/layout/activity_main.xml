@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controleur.MainActivity">
+
+    <EditText
+        android:id="@+id/et_mailU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Votre mail de connexion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="mot de passe"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/b_connexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion" />
+
+    <TextView
+        android:id="@+id/tv_echecConnex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Echec de connexion"
+        android:textAlignment="center"
+        android:textColor="#F10000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+</LinearLayout>

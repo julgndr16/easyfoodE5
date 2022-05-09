@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".client.EvaluationActivity">
+
+    <TextView
+        android:id="@+id/tv_evalResto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_commentaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="commentaire"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_recetteP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:paddingLeft="5sp"
+        android:text="Respect de la recette"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <RatingBar
+        android:id="@+id/rb_evalRecette"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:isIndicator="false"
+        android:stepSize="1" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="396dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#64DCD1" />
+
+    <TextView
+        android:id="@+id/tv_esthetiqueP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:paddingLeft="5sp"
+        android:text="Esthétique du plat"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <RatingBar
+        android:id="@+id/rb_esthetiqueP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stepSize="1" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="396dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#64DCD1" />
+
+    <TextView
+        android:id="@+id/tv_coutP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:paddingLeft="5sp"
+        android:text="Coût"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <RatingBar
+        android:id="@+id/rb_coutP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stepSize="1" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="396dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#64DCD1" />
+
+    <TextView
+        android:id="@+id/tv_qualiteNourriture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:paddingLeft="5sp"
+        android:text="Qualité de la nourriture"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <RatingBar
+        android:id="@+id/rb_qualiteNourriture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/b_saveEval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Evaluer" />
+
+
+    <TextView
+        android:id="@+id/tv_erreur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mettre un commentaire"
+        android:textAlignment="center"
+        android:textColor="#F10000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</LinearLayout>
