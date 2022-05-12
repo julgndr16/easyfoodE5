@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Easyfood42">
         <activity
+            android:name=".controleur.AutresActivity"
+            android:exported="true" />
+        <activity
             android:name=".client.EvaluationActivity"
             android:exported="false" />
         <activity

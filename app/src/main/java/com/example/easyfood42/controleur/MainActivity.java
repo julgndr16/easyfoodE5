@@ -56,14 +56,17 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                         case "restaurateur":
-
+                            Intent intentRestaurateur = new Intent(getApplicationContext(), AutresActivity.class);
+                            startActivity(intentRestaurateur);
                             break;
 
                         case "moderateur":
-
+                            Intent intentModerateur = new Intent(getApplicationContext(), AutresActivity.class);
+                            startActivity(intentModerateur);
                             break;
                         case "administrateur":
-
+                            Intent intentAdmin = new Intent(getApplicationContext(), AutresActivity.class);
+                            startActivity(intentAdmin);
                             break;
                     }
                 }
