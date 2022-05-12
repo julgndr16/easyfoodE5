@@ -2,6 +2,7 @@ package com.example.easyfood42.controleur;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.easyfood42.R;
 import android.os.Bundle;
 
 public class AutresActivity extends AppCompatActivity {

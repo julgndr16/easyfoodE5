@@ -142,10 +142,14 @@ public class BdSQLiteOpenHelper extends SQLiteOpenHelper {
 		db.execSQL("insert into commande (dateC, commentaireClientC, dateLivrC, modeReglementC, commandePreparee, commandeLivree, idU) values('2022-02-01 12:20:00','un peu de sel svp','2022-02-01 12:45:00','carte bleue',1,1,1);");
 		db.execSQL("insert into commande (dateC, commentaireClientC, dateLivrC, modeReglementC, commandePreparee, commandeLivree, idU) values('2022-06-01 12:20:00','rien à signaler','2022-06-01 12:45:00','liquide',1,1,1);");
 
+		db.execSQL("insert into commande (dateC, commentaireClientC, dateLivrC, modeReglementC, commandePreparee, commandeLivree, idU) values('2022-04-01 12:20:00','des couverts svp','2022-04-01 12:45:00','cheque',1,1,4);");
+
 		db.execSQL("insert into contenir (idC, idP, qteComm) values(1,1,2);");
 		db.execSQL("insert into contenir (idC, idP, qteComm) values(1,2,1);");
 
 		db.execSQL("insert into contenir (idC, idP, qteComm) values(2,4,3);");
+
+		db.execSQL("insert into contenir (idC, idP, qteComm) values(3,4,1);");
 
 		db.execSQL("insert into evaluer (idU,idR, commentaire,commentaireVisible,commentaireModere, respectRecette,esthetiquePlat,cout,qualiteNourriture) values(1,1,'très bon resto, parfait',1,1,5,4,3,4);");
 		//db.execSQL("insert into evaluer (idU,idR, commentaire,commentaireVisible,commentaireModere, respectRecette,esthetiquePlat,cout,qualiteNourriture) values(1,2,'resto à revoir',0,0,2,1,2,1);");
